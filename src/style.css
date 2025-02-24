@@ -24,13 +24,23 @@ a {
   color: rgb(238, 69, 159);
 }
 
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 200, 0.08);
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .topic {
@@ -63,8 +73,28 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 200, 0.08);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
   font-size: 13px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
