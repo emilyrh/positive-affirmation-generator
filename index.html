@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Affirmations</title>
   </head>
@@ -11,7 +12,7 @@
       <main>
         <header><h1>AI Affirmations Generator</h1></header>
 
-        <form>
+        <form id="affirmation-generator-form">
           <input
             type="text"
             placeholder="What would topic you like a positive affirmation for?"
@@ -22,11 +23,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="affirmation">
-          Affirmation will go here<br />
-          Affirmation will go here<br />
-          Affirmation will go here
-        </div>
+        <div class="affirmation" id="affirmation"></div>
       </main>
 
       <footer>
