@@ -7,39 +7,43 @@
     <title>AI Affirmations</title>
   </head>
   <body>
-    <header><h1>AI Affirmations Generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What would topic you like a positive affirmation for?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div id="affirmation">
-        Affirmation will go here<br />
-        Affirmation will go here<br />
-        Affirmation will go here
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/emilyrh" target="blank">Emily Huggins</a> and
-      is open-sourced on
-      <a
-        href="https://github.com/emilyrh/positive-affirmation-generator"
-        target="blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://ai-positive-affirmations.netlify.app" target="blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <main>
+        <header><h1>AI Affirmations Generator</h1></header>
 
+        <form>
+          <input
+            type="text"
+            placeholder="What would topic you like a positive affirmation for?"
+            autofocus
+            required
+            autocomplete="off"
+            class="topic"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="affirmation">
+          Affirmation will go here<br />
+          Affirmation will go here<br />
+          Affirmation will go here
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/emilyrh" target="blank">Emily Huggins</a>
+        and is open-sourced on
+        <a
+          href="https://github.com/emilyrh/positive-affirmation-generator"
+          target="blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://ai-positive-affirmations.netlify.app" target="blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
